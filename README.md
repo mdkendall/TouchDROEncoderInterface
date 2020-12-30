@@ -1,4 +1,4 @@
-# TouchDROEncoderInterface
+# Touch DRO Encoder Interface
 
 Firmware for an ESP32 to provide an interface between quadrature encoders
 and the TouchDRO App on a tablet.
@@ -23,3 +23,11 @@ The format is that required by the TouchDRO App.
 https://www.touchdro.com/
 
 Built using PlatformIO, the Arduino framework, and configured for an ESP32Dev board.
+
+Configure the pins to use for the encoders, and the amount of backlash on each axis,
+in the initialiser for `axis[]`. The backlash is specified in counts (not inches or mm).
+Enter half the required total amount.
+
+Configure the pin to use for the tacho with `PIN_TACHO`.
+
+Configure the name of the offered Bluetooth connection with `BT_NAME`.
