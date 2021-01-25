@@ -41,7 +41,7 @@ void setup(void) {
         axis[i].encoder.clearCount();
     }
 
-    tachoInit(PIN_TACHO, 12);
+    tachoInit(PIN_TACHO, 6);
 }
 
 void loop(void) {
